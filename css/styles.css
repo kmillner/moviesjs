@@ -1,0 +1,8 @@
+.movie {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.movie:hover {
+  text-decoration: underline;
+}
