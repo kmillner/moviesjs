@@ -30,8 +30,15 @@ var movie3 = new Movie("The Mummy", ["9:30 AM", " 2:45 PM", " 5:00 PM", " 6:00 P
 $(document).ready(function() {
   movies.forEach(function(movie){
     $("#show-movie").prepend('<h4 id="' + movie.nameAsId() + '" class="movie">' + movie.name +'</h4>')
-    $("#" + movie.nameAsId()).click(function(){
-      alert(movie.showTimes[0]);
+    $("#" + movie.nameAsId()).last().click(function(){
+      $("ul").empty();
+      //alert(movie.showTimes[0]);
+      $("#selected-movie").show();
+      $("#selected-movie").text(movie.name);
+  movies.forEach(function(showtime){
+    $("ul").append("<li>" + movie.showTimes + "</li>");
+  })
+
     });
   });
 
@@ -62,9 +69,8 @@ $(document).ready(function() {
 // $("ul#showTimes").append("<li><span class='showTimes'>" + movie1 + "</span></li>");
 //     $(".movie").click(function() {
 //       $(".showTimes").show();
-//       $(".showTimes movie1 h2").text(movie1.name);
 //       // $(".showTimes .movie1 p").text(movie1.showTimes);
-//       $("ul").append("<li>" + movie1.showTimes() + "</li>");
+    //  $("ul").append("<li>" + movie1.showTimes() + "</li>");
 //       // $("#show-movie .movie2").text(movie2.showTimes);
 //       // $("#show-movie .movie3").text(movie3.showTimes);
 //     });
