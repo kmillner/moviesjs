@@ -1,12 +1,12 @@
-# Project Name
+# Movies
 
-##### _Project Purpose, date 2015_
+##### _Epicodus classwork, Week 7, September 22 2015_
 
-#### By **Names**
+#### By **Kallen Millner & Jennifer Morkunas**
 
 ## Description
 
-Description goes here
+Select the name of a movie and the time of day that you would like a ticket. The webpage will eventually let you how much your movie ticket will cost.
 
 ## Setup
 
@@ -23,7 +23,7 @@ Description goes here
 
 ### Legal
 
-Copyright (c) 2015 **NAMES**
+Copyright (c) 2015 **Kallen Millner & Jennifer Morkunas**
 
 This software is licensed under the MIT license.
 
